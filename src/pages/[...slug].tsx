@@ -3,7 +3,7 @@ import {
   ExperienceRoot,
   createExperience,
 } from '@contentful/experiences-sdk-react'
-import { client } from '@/contentful/client'
+import { getClient } from '@/contentful/client'
 import type {
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
@@ -22,7 +22,9 @@ export const getServerSideProps = async ({
     }
   }
 
-  const slug = params.slug as string
+  const [token, slug] = params.slug as string[]
+
+  const client = getClient(token)
 
   const experience = await fetchBySlug({
     client,
