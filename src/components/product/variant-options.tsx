@@ -28,7 +28,7 @@ export const ProductVariantOptions = (
                   <li className='mt-2' key={value}>
                     <Link
                       href={{
-                        pathname: '/product/[handle]',
+                        pathname: '/product/[...handle]',
                         query: { ...router.query, [option.name]: value },
                       }}
                       shallow
