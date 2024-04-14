@@ -21,3 +21,13 @@ Add two preview URLs, one for a regular page and one for a product template page
 
 Use the first URL for pages with a slug.
 Use the second URL for pages using the product template.
+
+## ENV
+
+```text
+CTFL_SPACE_ID=
+CTFL_ENV_ID=
+CTFL_API_HOST=
+CTFL_TOKEN=
+CTFL_EXPERIENCE_CONTENT_TYPE_ID=
+```
