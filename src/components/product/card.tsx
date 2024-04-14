@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { createRangeText } from '@/utils'
 import { cn } from '@/lib/utils'
+import { useRouter } from 'next/router'
 
 interface ProductCardProps {
   className?: string
@@ -25,19 +26,22 @@ interface ProductCardProps {
 }
 
 export const ProductCard = (props: ProductCardProps) => {
+  const router = useRouter()
   const { className, product } = props
   const image = product.featuredImage.url
   const price = createRangeText(
     product.priceRange.minVariantPrice.amount,
     product.priceRange.maxVariantPrice.amount,
   )
+  const { slug } = router.query
+  const [token] = slug as string[]
   return (
     <Link
       className={cn(
         'group block ring-offset-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
         className,
       )}
-      href={`/product/${product.handle}`}
+      href={`/product/${token}/${product.handle}`}
     >
       <Image
         draggable={false}
