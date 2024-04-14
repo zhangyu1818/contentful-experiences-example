@@ -4,16 +4,29 @@ import {
   createExperience,
 } from '@contentful/experiences-sdk-react'
 import { client } from '@/contentful/client'
-import type { InferGetServerSidePropsType } from 'next'
+import type {
+  GetServerSidePropsContext,
+  InferGetServerSidePropsType,
+} from 'next'
 import { getOldestProducts } from '@/service'
 import { OldestProductsProvider } from '@/components/product/context'
 
 const localeCode = 'en-US'
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({
+  params,
+}: GetServerSidePropsContext) => {
+  if (!params?.slug) {
+    return {
+      notFound: true,
+    }
+  }
+
+  const slug = params.slug as string
+
   const experience = await fetchBySlug({
     client,
-    slug: 'home', //could be fetched from the context
+    slug, //could be fetched from the context
     experienceTypeId: process.env.CTFL_EXPERIENCE_CONTENT_TYPE_ID!,
     localeCode,
   })
