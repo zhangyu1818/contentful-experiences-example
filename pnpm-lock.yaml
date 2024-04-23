@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@contentful/experiences-sdk-react':
-    specifier: ^1.0.4
-    version: 1.0.4(@types/react-dom@18.2.25)(@types/react@18.2.77)(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8)
+    specifier: ^1.0.6
+    version: 1.0.6(@types/react-dom@18.2.25)(@types/react@18.2.77)(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8)
   '@radix-ui/react-accordion':
     specifier: ^1.1.2
     version: 1.1.2(@types/react-dom@18.2.25)(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
@@ -112,13 +112,13 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  /@contentful/experiences-components-react@1.0.4(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-K400HUM4nJlxak9Dn5G8/EnzE7xoMW26Eq5P9zk3SBN4vCsAE2da2AUwM3mgCH968oEIF6iOkBg6Pp4eJJ9z6A==}
+  /@contentful/experiences-components-react@1.0.6(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-jwOIVQsXQf+Azkzv6+MLLPbgpA93chQ/wdXBDJB3tOWX1sT/NEllg1x2YGtpWcx4ftjdGZmGXepbapL+zAl9Ng==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
     dependencies:
-      '@contentful/experiences-core': 1.0.4(contentful@10.8.7)
+      '@contentful/experiences-core': 1.0.6(contentful@10.8.7)
       '@contentful/rich-text-react-renderer': 15.19.6(react-dom@18.2.0)(react@18.2.0)
       postcss-import: 15.1.0(postcss@8.4.38)
       react: 18.2.0
@@ -129,26 +129,26 @@ packages:
       - postcss
     dev: false
 
-  /@contentful/experiences-core@1.0.4(contentful@10.8.7):
-    resolution: {integrity: sha512-jnwzhMxDagfpthqFw06URYaEOkRnaOkGYaNMIT5z1SB1ArHEgCeYyy4iEPu6lAOLd5CoWjRuWiD21YZyvblLxQ==}
+  /@contentful/experiences-core@1.0.6(contentful@10.8.7):
+    resolution: {integrity: sha512-Oz+FN0CiAMeNB3DQR+bRKJaZF2IYnhIa23REapl8M2fWa9RESXus0bO1aQ8VHn5jm8owRt7O1YDbPzObc/srXw==}
     peerDependencies:
       contentful: '>=10.6.0'
     dependencies:
-      '@contentful/experiences-validators': 1.0.4
+      '@contentful/experiences-validators': 1.0.6
       '@contentful/rich-text-types': 16.3.5
       contentful: 10.8.7
     dev: false
 
-  /@contentful/experiences-sdk-react@1.0.4(@types/react-dom@18.2.25)(@types/react@18.2.77)(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8):
-    resolution: {integrity: sha512-Q9FzQOlfJyNsnH+m9Hc//UOXfNI9BQJNu40We78BkIsnHrMZtxZ4czrvuhdU9F7/dE9WthBCsMNxH0A1QnZWqg==}
+  /@contentful/experiences-sdk-react@1.0.6(@types/react-dom@18.2.25)(@types/react@18.2.77)(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8):
+    resolution: {integrity: sha512-8JiO7Ch4SyiifziJ15SM45oaLUgLxq/o61KuKLwu3pYKZyO6Nr731onBqfWxCgs0+hhO8vdpX+SY270FVfjDfQ==}
     peerDependencies:
       contentful: '>=10.6.0'
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@contentful/experiences-components-react': 1.0.4(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
-      '@contentful/experiences-core': 1.0.4(contentful@10.8.7)
-      '@contentful/experiences-visual-editor-react': 1.0.4(@types/react-dom@18.2.25)(@types/react@18.2.77)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
+      '@contentful/experiences-components-react': 1.0.6(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
+      '@contentful/experiences-core': 1.0.6(contentful@10.8.7)
+      '@contentful/experiences-visual-editor-react': 1.0.6(@types/react-dom@18.2.25)(@types/react@18.2.77)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
       '@contentful/rich-text-types': 16.3.5
       classnames: 2.5.1
       contentful: 10.8.7
@@ -169,20 +169,20 @@ packages:
       - vite
     dev: false
 
-  /@contentful/experiences-validators@1.0.4:
-    resolution: {integrity: sha512-qOmeUY5gABothFfCAn6L0KsyQLwiQjnlNYBrpOVof2qX2AXlnZrCePBIkLMRr2DiG6KFjiX6A39IYZihdb/RAQ==}
+  /@contentful/experiences-validators@1.0.6:
+    resolution: {integrity: sha512-bftb7+mIxC+HHAwDwAFbV3VqwqZD3PB+8oLFnxcoz2lKrnrf4qraMbCCmQGk3DAXwA9eUk0Et1DFvPOqh2f1SA==}
     dependencies:
       zod: 3.22.4
     dev: false
 
-  /@contentful/experiences-visual-editor-react@1.0.4(@types/react-dom@18.2.25)(@types/react@18.2.77)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ANJTwAOFXFpwc8BPodUU9tr9MEgNrXHCcT/rs71f7Eh/O23CiXfLwktYtAdC4dP32BiTQ0eRwj4ehTyPFEZSsQ==}
+  /@contentful/experiences-visual-editor-react@1.0.6(@types/react-dom@18.2.25)(@types/react@18.2.77)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-EV2FA0D4xrL1VrAIRvnhA1P28gL28hQN8+L9Yv0Pv9+YQAa7QMiLaJqkewAuk+uAmn7syyZOEjP9ZcTbPzRv9A==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
     dependencies:
-      '@contentful/experiences-components-react': 1.0.4(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
-      '@contentful/experiences-core': 1.0.4(contentful@10.8.7)
+      '@contentful/experiences-components-react': 1.0.6(contentful@10.8.7)(postcss@8.4.38)(react-dom@18.2.0)(react@18.2.0)
+      '@contentful/experiences-core': 1.0.6(contentful@10.8.7)
       '@hello-pangea/dnd': 16.6.0(@types/react-dom@18.2.25)(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
       classnames: 2.5.1
       contentful: 10.8.7
